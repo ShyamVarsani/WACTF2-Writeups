@@ -1,7 +1,7 @@
 # _WACTF2 2018 FORENSICS Writeups - Shyamal Varsani (**@baconandegg5**)_
 
 ## Forensics-0
-> For the forensics-0 challenge in WACTF@, we were given a jpeg file in which we were required to give a SHA1 hash of
+> For the forensics-0 challenge in WACTF2, we were given a jpeg file in which we were required to give a SHA1 hash of
 
 To do this, I used `sha1sum`, which is a tool that prints (to stdout) or checks SHA1 (160-bit) checksums.
 
