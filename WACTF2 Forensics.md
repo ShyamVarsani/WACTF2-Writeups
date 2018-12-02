@@ -1,7 +1,11 @@
 # _WACTF2 2018 FORENSICS Writeups - Shyamal Varsani (**@baconandegg5**)_
 
-## Forensics-0
-> For the forensics-0 challenge in WACTF2, we were given a jpeg file in which we were required to give a SHA1 hash of
+## Forensics-0 I'm lovin it
+### Challenge Prompt:
+>here is an image in this folder. Can you tell me its SHA-1 value?
+
+### Writeup:
+ For the forensics-0 challenge in WACTF2, we were given a jpeg file in which we were required to give a SHA1 hash of
 
 To do this, I used `sha1sum`, which is a tool that prints (to stdout) or checks SHA1 (160-bit) checksums.
 
@@ -16,9 +20,11 @@ This digest in conjuction with the flag format, gave us the flag:
 *WACTF2{abf03b17013e5aa440ba8c5cac11c4dec18e4084}*
 
 ---
-## Forensics-1
-
-> For the forensics-1 challenge in WACTF2, we were presented with a SQLite 3 database in which we had to find the user's password
+## Forensics-1 SMS-forensics-challenge
+### Challenge Prompt:
+>An SMS database has been extracted from an Android device under investigation. Use sqlite3 to view the SMS records and find the password.
+### Writeup:
+For the forensics-1 challenge in WACTF2, we were presented with a SQLite 3 database in which we had to find the user's password
 
 Used the `file` command to try and determine what I was dealing with:
 ```
@@ -60,9 +66,10 @@ It was possible to see that six messages had either been sent/recived, with the 
 
 ---
 
-## Forensics-2
-
->We were given a .tar archive, where we were told that a person had messed up the compression of a file due to making a mistake been Gif and Jif. 
+## Forensics-2 It's GIF not JIF
+### Challenge Prompt:
+>I put my favorite GIF in an archive for safe keeping but it seems to be corrupt! I bet it was my coworker who thinks it's pronounced 'JIF'.
+### Writeup:
 
 I initially went on to extract the 'mybeloved.tar' archive that was supplied to us, which gave the output of 3 .txt files (Flash_Animation.txt,GIF.txt and Meme.txt). I spent a while looking at these text files trying to discern if anything fishy was going on them but I had hit a wall for a period of time. 
 
@@ -119,8 +126,11 @@ This resulted in a total of 152 frames being extracted, and when using `eog` to 
 *WACTF2{H3y_Ya!!!}*
 
 ---
-## Forensics-3
+## Forensics-3 Hiding in plain sight 
+### Challenge Prompt:
+>An attacker has stolen a sensitive document. We have compromised her proxy and recovered the network activity from the time of the attack. Can you find the file she stole? (The flag is in the file.)
 
+### Writeup:
 >In this challenge, we were given a packet capture, which we were told some secret communication of somesort was taking place? Strange mane?
 
 I opened up the provided *forensics3.pcapng* in `wireshark` (packet capture multitool) to analyze and sift through the network traffic that had been captured.
@@ -290,9 +300,12 @@ Contrary to this, we can see by observation that in the place where the users ha
 
 ---
 
-## Forensics-4
+## Forensics-4 Opr8t3r
+### Challenge Prompt:
+>We have acquired a mobile device we suspect is being used to stores a passphrase via encrypted services. Can you find it?
 
-> This is a challenge where we were given 2 disk images (dm-0.img & dm-1.img) and a android backup to analyze, in the hopes of finding out about some sort of nefarious activity using a encrypted sms system of somes sort? 
+### Writeup:
+> This is a challenge where we were given 2 disk images (dm-0.img & dm-1.img) and a android backup to analyze, in the hopes of finding out about some sort of nefarious activity using a encrypted sms system of some sort? 
 
 This challenge was done fairly simply using Autopsy 4.9.1 after multiple efforts with Autopsy 2.24 were undertaken.
 
@@ -305,7 +318,7 @@ After many,many hours, I had loaded up the images into v4.9.1 on a Windows VM an
 
 *WACTF2{0P$3c_Ab0ve_A77}*
 
->I will keep in mind for next time I undertake any sort of forensics on disk images that Autopsy 4.9.1 is much more powerful than v2.24 ;) and i should never use the version that comes with kali natively ;) 
+>>I will keep in mind for next time I undertake any sort of forensics on disk images that Autopsy 4.9.1 is much more powerful than v2.24 ;) and i should never use the version that comes with kali natively ;) 
 
 ---
 
