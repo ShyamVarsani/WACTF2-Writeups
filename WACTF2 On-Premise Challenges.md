@@ -2,12 +2,21 @@
 
 These challenges required us to physically plug into a network/switch, which had 2 Raspberry Pi's on it doing some strange things :) 
 
+On-Premise Challenge Description:
+
+>You can connect to the on-premise switch that is labelled "RedTiger Communications" to get onto the development network. The RedTiger devices are within the following subnet: 10.1.1.0/24
+
+>The management software can be found attached to this challenge. (the .asar file I mention below)
+---
 >With these challenges, we were provided with a redtiger.asar file - "Asar is a simple extensive archive format, it works like tar that concatenates all files together without compression, while having random access support"
 
 > This file had a bunch of configuration information that came in handy to complete the following challenges 
-
+---
 ## 0 RedTiger - Find the flag
+### Challenge Prompt:
+>You overheard this conversation a few days ago… Person 1: Hey, did you see that RedTiger Communications is going to be announcing their latest Internet of Things (IoT) device next week? Person 2: Yeah! I heard it was an IoT connected pacemaker! Person 3: Nah, I was told it's a 30-seat bus that you drive with your smartphone! Person 4: I heard it was a lightbu- wait… a bus?
 
+### Writeup:
 >To find this flag we were told that we had to be on the subnet 192.168.4.0/24.
 
 I initially tried the approach of pulling out my shiny new Thunderbolt to Ethernet adapter out my bag, plugging in one of a bazillion Cat5e cables into said dongle and just doing a dirty `netdiscover`.
@@ -200,6 +209,10 @@ The response that was received from that was a Hex string (5741435446327b6f6e655
 ---
 
 ## 1 RedTiger - Get the config file
+### Challenge Prompt:
+>We have infiltrated a RedTiger Communications development network that contains two of the IoT devices on it (running the same system). As a competitor company to RedTiger, it is imperative we break into the device, steal its configuration file, and understand how the proprietary communication protocol works before the product is announced to the world!
+### Writeup:
+
 >The objective of the second challenge was to get the config file off of the Raspberry Pi. 
 
 Taking a look at the redtiger.asar file, it could be seen that "7274676574666c616731" could be send to 192.168.4.242:1789 in return for a 'config file':
@@ -269,6 +282,10 @@ third_flag=false
 ---
 
 ## 2 RedTiger - Upload a modified config file
+### Challenge Prompt:
+>We were also able to secure a BETA version of the management software used to control the device. We don't know anything about this software or how to get it running, but we did come across the following note possibly written by one of the developers:
+### Writeup:
+"I have never wanted to gouge my eyes out with a fork more so than when I was building this Electron application."
 Now that we had a config file from the previous challenge, we had to follow the .asar file 'steps' in the uploading of a modified config file:
 
 ```
