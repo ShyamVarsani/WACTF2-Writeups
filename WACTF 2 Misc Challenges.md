@@ -86,7 +86,7 @@ http://challenge.capture.tf:5200/reset.html, which contained the following infor
 ```
 SquirrelX Password Reset
 To reset your password, please call the service desk on: 
-<REDACTED>
+<REDACTED PHONE NO#>
 You will be asked for your full name and date of birth to validate your identity 
 ```
 From this information I knew the main object was to find the names and birthday of SquirellX employees. 
@@ -97,7 +97,7 @@ https://mastodon.social/@squirrelx - social media for squirrelx? Matches the des
 
 The description on the page info matched the one from the command prompt, so huzzah I thought! 
 
-So in an attempt to socially engineer/convince the person (@sudosammy) who was on the other end of +61 497 810 276, without thinking too much into it and wanting to get simply get the point for the challenge asap, I decided to try with the first lead that I had (contained the Bday in profile description as well as stating she was an employee! (yay right?!)).... which turned out to Ms. Laura Banks (https://mastodon.social/@laurabanks) .... I called up the number and put on my best girly voice, only to get Sam responding with "YOU DONT SOUND LIKE LAURA?". I have never hung up the phone so quickly! (call 1)
+So in an attempt to socially engineer/convince the person (@sudosammy) who was on the other end of <REDACTED PHONE NO#>, without thinking too much into it and wanting to get simply get the point for the challenge asap, I decided to try with the first lead that I had (contained the Bday in profile description as well as stating she was an employee! (yay right?!)).... which turned out to Ms. Laura Banks (https://mastodon.social/@laurabanks) .... I called up the number and put on my best girly voice, only to get Sam responding with "YOU DONT SOUND LIKE LAURA?". I have never hung up the phone so quickly! (call 1)
 
 After I had gotten outed, I then saw that Mr. Ryan Collier (https://mastodon.social/@ryancollier) also a follower of the @squirrelx page && with all the required employee creds to reset the password!
 
