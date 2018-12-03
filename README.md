@@ -1,9 +1,9 @@
 # WACTF2-Writeups
 
 My repository of WACTF2 Writeups
-1. Forensics 
+1. Forensics
 2. On-Premise
-( In need of the challenge prompts for the On-premise && Misc catagories :) )
+3. Misc 
 
 WACTF is a cyber security challenge in Western Australia. A two day CTF where your skills will be pitted against a range of technical challenges.
 
