@@ -85,7 +85,7 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 
 All binwalk had shown here was that this file was a POSIX tar archive, but what had caught my eye was the "imation.txt". I spent the next half hour trying to see if i could find the *imation.txt* in the .tar file. 
 
-I then pestered the don @Snide during Pizza time on Day 1 (props for creating this challenge). I  attempted to ask for any hints, and he told me to _Try Harder_ && _Look at it differently dude_. I then tried a bunch of things to avail, until I realized that I hadn't done the most basic of stuff with the .tar archive.
+I then pestered the don @SnidePiano during Pizza time on Day 1 (props for creating this challenge). I  attempted to ask for any hints, and he told me to _Try Harder_ && _Look at it differently dude_. I then tried a bunch of things to avail, until I realized that I hadn't done the most basic of stuff with the .tar archive.
 
 I then went to `strings` the .tar file, where I found the following:
 
@@ -121,7 +121,7 @@ I then saved this file (as blessed.gif), and it opened as a valid .gif when usin
 Using `ffmpeg` (image and audio manipulator), to pull out every single individual frame out of the GIF for inspection, by doing the following:
 `ffmpeg -i blessed.gif thumb%04d.jpg -hide_banner`
 
-This resulted in a total of 152 frames being extracted, and when using `eog` to open all of them, I found the flag in classic Snide fashion with a Haunter Pokemon background on frame 121.
+This resulted in a total of 152 frames being extracted, and when using `eog` to open all of them, I found the flag in classic @SnidePiano fashion with a Haunter Pokemon background on frame 121.
 
 *WACTF2{H3y_Ya!!!}*
 

@@ -85,7 +85,8 @@ http://challenge.capture.tf:5200/reset.html, which contained the following infor
 
 ```
 SquirrelX Password Reset
-To reset your password, please call the service desk on: +61 497 810 276
+To reset your password, please call the service desk on: 
+<REDACTED>
 You will be asked for your full name and date of birth to validate your identity 
 ```
 From this information I knew the main object was to find the names and birthday of SquirellX employees. 
